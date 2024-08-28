@@ -7,7 +7,7 @@ export default function Guidami ({ a, b, c, d, e, f, g, cDiesis, eBemolle, fDies
     <>
     <View style={globalStyles.containerCantico}>
     { accordiStru != "Elettrica" &&
-<>
+      <>
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>1.</Text>Guidam</Text>
                   {(accordiStru != "Testo" && accordiStru != "Elettrica") &&<View><Text style={globalStyles.AccordoCantico}>{e}-</Text></View>  }

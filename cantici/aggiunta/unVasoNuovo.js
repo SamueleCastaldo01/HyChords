@@ -59,8 +59,9 @@ export default function UnVasoNuovo ({ a, b, c, d, e, f, g, cDiesis, eBemolle, f
 
         <View style={globalStyles.SpazioCantico}></View>
 
-
-        <View style={globalStyles.righeCantico}>
+        { accordiStru != "Elettrica" &&
+        <>
+             <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Coro:</Text></Text>
         </View>
 
@@ -91,6 +92,48 @@ export default function UnVasoNuovo ({ a, b, c, d, e, f, g, cDiesis, eBemolle, f
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>sete.<Text style={globalStyles.textCanticoColo}>”(BIS)</Text></Text>
             {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{a}-7</Text></View> }
         </View>
+        </>
+        }
+
+
+{ accordiStru === "Elettrica" &&
+        <>
+        <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoNo}>Coro:</Text></Text>
+        </View>
+
+        <View style={globalStyles.righeCantico}>
+        {accordiStru == "Elettrica" &&<View><Text style={globalStyles.AccordoCanticoMel}>      8      8      8     8      8    7     7        6       7   7          7          7</Text></View>  }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoNo}>“</Text>Fai di </Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{d}/{gBemolle}</Text></View> }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>me un vaso </Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{g}7</Text></View> }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>nuovo </Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{a}/{g}</Text></View> }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>  dove gli altri </Text>
+        </View>
+
+        <View style={globalStyles.righeCantico}>
+        {accordiStru == "Elettrica" &&<View><Text style={globalStyles.AccordoCanticoMel}>    7     7    6     6   5       6   6   6           3         3     5    4</Text></View>  }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>possano </Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{gBemolle}-</Text></View> }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>bere</Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{b}- {b}  {b}/{eBemolle}</Text></View> }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>, bere la tua acqua </Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{e}-</Text></View> }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>viva,</Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{a}</Text></View> }
+        </View>
+
+        <View style={globalStyles.righeCantico}>
+        {accordiStru == "Elettrica" &&<View><Text style={globalStyles.AccordoCanticoMel}>  2       2         2   3       1    6    2  1</Text></View>  }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>acqua che toglie la </Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{d}</Text></View> }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>sete.<Text style={globalStyles.textCanticoColo}>”(BIS)</Text></Text>
+            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{a}-7</Text></View> }
+        </View>
+        </>
+        }
 
     </View>
     
