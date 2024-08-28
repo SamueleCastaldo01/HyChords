@@ -92,7 +92,7 @@ export default function Guidami ({ a, b, c, d, e, f, g, cDiesis, eBemolle, fDies
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>1.</Text>G</Text>
                   {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>               {e}-</Text></View>  }
-                  {accordiStru == "Elettrica" &&<View><Text style={globalStyles.AccordoCanticoMel}>3       2     1      6     7        1 1    4</Text></View>  }
+                
             <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>uidami, Spirito S</Text>
                   {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{a}-</Text></View>  }
             <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>anto,</Text>

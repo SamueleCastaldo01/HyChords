@@ -6,7 +6,6 @@ export default function ICieliNarrano ({ a, b, c, d, e, f, g, cDiesis, eBemolle,
     return (
     <>
     <View style={globalStyles.containerCantico}>
-
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>1. </Text></Text>
             {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{a} {cDiesis}-</Text></View>} 
@@ -39,6 +38,8 @@ export default function ICieliNarrano ({ a, b, c, d, e, f, g, cDiesis, eBemolle,
 
         <View style={globalStyles.SpazioCantico}></View>
 
+        { accordiStru != "Elettrica" &&
+      <>
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Coro: </Text>per s</Text>
             {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{cDiesis}-</Text></View>} 
@@ -60,6 +61,39 @@ export default function ICieliNarrano ({ a, b, c, d, e, f, g, cDiesis, eBemolle,
             {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{a}</Text></View>} 
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>ui</Text>
         </View>
+      </>
+    }
+
+{ accordiStru === "Elettrica" &&
+      <>
+        <View style={globalStyles.righeCantico}>
+        {accordiStru == "Elettrica" &&<View><Text style={globalStyles.AccordoCanticoMel}>                    1      1          2     3       5   6      1 -4   3 2 1 7</Text></View>  }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Coro: </Text>per s</Text>
+            {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{cDiesis}-</Text></View>} 
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>empre regner</Text>
+            {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{d} {e}/{d}</Text></View>} 
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>à,</Text>
+        </View>
+
+        <View style={globalStyles.righeCantico}>
+        {accordiStru == "Elettrica" &&<View><Text style={globalStyles.AccordoCanticoMel}>      7  7    1      2       7     5 5         1   1     2    3     5   6--   6- 5</Text></View>  }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>Gesù l’agnel di D</Text>
+            {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{cDiesis}- {fDiesis}-</Text></View>} 
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>io, Mi dono tutto </Text>
+            {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{b}-{e}</Text></View>} 
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>e</Text>
+        </View>
+
+        <View style={globalStyles.righeCantico}>
+        {accordiStru == "Elettrica" &&<View><Text style={globalStyles.AccordoCanticoMel}>  7   4    3     2  1   1 1</Text></View>  }
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>Adoro solo l</Text>
+            {accordiStru != "Testo" && <View><Text style={globalStyles.AccordoCantico}>{a}</Text></View>} 
+            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>ui</Text>
+        </View>
+      </>
+    }
+
+
 
         <View style={globalStyles.SpazioCantico}></View>
 
