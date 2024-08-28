@@ -1621,14 +1621,14 @@ const styles = StyleSheet.create({
       },
       imageBassMenu: {
         bottom: 4,
-        left: 4,
+        left: 0,
         width: 30, // Larghezza dell'immagine PNG
         height: 30, // Altezza dell'immagine PNG
         tintColor: colorIconBottom
       },
       imageEletricMenu: {
         bottom: 4,
-        left: 4,
+        left: 0,
         width: 30, // Larghezza dell'immagine PNG
         height: 30, // Altezza dell'immagine PNG
         tintColor: colorIconBottom
