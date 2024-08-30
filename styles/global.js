@@ -112,6 +112,9 @@ export const globalStyles = StyleSheet.create({
       color: "green",
       fontWeight: "bold",
   },
+  CM: {
+      color: "orange",
+  },
     SpazioCantico: {
         marginTop: screenWidth <500 ? 20 : 25,
     },
