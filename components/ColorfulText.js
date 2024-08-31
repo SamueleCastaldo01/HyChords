@@ -3,7 +3,8 @@ import { Text, View } from 'react-native';
 import { globalStyles } from '../styles/global';
 
 const ColorfulText = ({ children }) => {
-  const pattern = /(#\d+|@\d+|\d+|\s+)/g;
+  // Espressione regolare che cattura numeri e lettere maiuscole e minuscole, con o senza prefissi
+  const pattern = /(#\d+|@\d+|#[A-Za-z]|@[A-Za-z]|[A-Za-z]|\d+|\s+)/g;
   const parts = children.match(pattern);
 
   return (
@@ -12,10 +13,10 @@ const ColorfulText = ({ children }) => {
         let color = globalStyles.AccordoCanticoMel.color; // Colore di default
 
         if (part.startsWith('#')) {
-          color = '#D84B20';
+          color = '#D84B20'; // Arancione per prefisso #
           part = part.substring(1); // Rimuovi il prefisso '#'
         } else if (part.startsWith('@')) {
-          color = 'green';
+          color = 'green'; // Verde per prefisso @
           part = part.substring(1); // Rimuovi il prefisso '@'
         }
 
