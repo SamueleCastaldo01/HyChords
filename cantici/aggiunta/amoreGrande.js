@@ -99,7 +99,7 @@ export default function AmoreGrande ({ a, b, c, d, e, f, g, cDiesis, eBemolle, f
 { accordiStru === "Elettrica" &&
         <>  
              <View style={globalStyles.righeCantico}>
-             {accordiStru == "Elettrica" &&<View><ColorfulText>                    1         #7      1         1 2     3      7</ColorfulText></View>  }
+             {accordiStru == "Elettrica" &&<View><ColorfulText>                    1         #7      1         1 2     3      #7         Box2</ColorfulText></View>  }
             <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Coro: </Text>Dio d'am</Text>
             {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{c}</Text></View>  }
             <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>or, Dio d'a</Text>
