@@ -3,8 +3,8 @@ import { Text, View } from 'react-native';
 import { globalStyles } from '../styles/global';
 
 const ColorfulText = ({ children }) => {
-  // Espressione regolare che cattura numeri e lettere maiuscole e minuscole, con o senza prefissi
-  const pattern = /(#\d+|@\d+|#[A-Za-z]|@[A-Za-z]|[A-Za-z]|\d+|\s+)/g;
+  // Espressione regolare che cattura numeri, lettere, e il carattere "-", con o senza prefissi
+  const pattern = /(#\d+|@\d+|#[A-Za-z-]|@[A-Za-z-]|[A-Za-z-]|\d+|-|\s+)/g;
   const parts = children.match(pattern);
 
   return (
