@@ -7,6 +7,20 @@ export default function QuelloCheDioDiceDiMe ({ a, b, c, d, e, f, g, cDiesis, eB
     <>
     <View style={globalStyles.containerCantico}>
 
+    {accordiStru == "Elettrica" &&
+      <>
+            <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Intro:  </Text>Loop ambinetal</Text>
+           </View>
+            <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>1 Parte:</Text> Arpeggio: 1 3 (Sol corde a vuoto: 3 e 2)</Text>
+            </View>
+
+            <View style={globalStyles.SpazioCantico}></View>
+      </>
+      }
+
+
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>1. </Text>
             {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{g}</Text></View>  }
@@ -71,6 +85,14 @@ export default function QuelloCheDioDiceDiMe ({ a, b, c, d, e, f, g, cDiesis, eB
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>osì.</Text>
         </View>
 
+        {accordiStru == "Elettrica" &&
+      <>
+            <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Parte:  </Text>8 5 4 3 4 5| 8 5 4 3 SOL</Text>
+           </View>
+      </>
+      }
+
         <View style={globalStyles.SpazioCantico}></View>
 
         {accordiStru!="Testo" &&
@@ -122,6 +144,15 @@ export default function QuelloCheDioDiceDiMe ({ a, b, c, d, e, f, g, cDiesis, eB
         </View>
 
         <View style={globalStyles.SpazioCantico}></View>
+
+        {accordiStru == "Elettrica" &&
+      <>
+            <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Ponte:  </Text>MI Fa# SOL LA PWH</Text>
+           </View>
+            <View style={globalStyles.SpazioCantico}></View>
+      </>
+      }
 
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Ponte: </Text>Sono </Text>

@@ -7,6 +7,19 @@ export default function BenedettoSei ({ a, b, c, d, e, f, g, cDiesis, eBemolle, 
     <>
     <View style={globalStyles.containerCantico}>
 
+      {accordiStru == "Elettrica" &&
+      <>
+            <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Intro:  </Text>1 1 5 1 5| 2 5 2 5|1 1 5 1 5| 4 5 4 5</Text>
+           </View>
+            <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>2 Parte Rythm  </Text></Text>
+            </View>
+
+            <View style={globalStyles.SpazioCantico}></View>
+      </>
+      }
+
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>1. </Text></Text>
                {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{a}</Text></View> }
@@ -122,6 +135,15 @@ export default function BenedettoSei ({ a, b, c, d, e, f, g, cDiesis, eBemolle, 
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Coro:... (Bis) </Text></Text>
         </View>
+
+        {accordiStru == "Elettrica" &&
+      <>
+            <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Chiusura:  </Text>-3 4 3 1H2 1</Text>
+           </View>
+
+      </>
+      }
 
 
 
