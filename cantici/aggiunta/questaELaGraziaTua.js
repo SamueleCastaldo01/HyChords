@@ -7,6 +7,23 @@ export default function QuestaElaGraziaTua ({ a, b, c, d, e, f, g, cDiesis, eBem
     <>
     <View style={globalStyles.containerCantico}>
 
+
+    {accordiStru == "Elettrica" &&
+        <>
+        <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Intro Riff: </Text> 3 Box (16 tasto Tonalità: Fa#)</Text>
+        </View>
+        <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>1 7 6 7| 7 6 7| 5 6 7 2 3</Text>
+        </View>
+        <View style={globalStyles.righeCantico}>
+            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>1 7 6 7| 7 6 7| 5 6 7 ⬇️3 2</Text>
+        </View>
+        
+        <View style={globalStyles.SpazioCantico}></View>
+        </>
+    }
+
         <View style={globalStyles.righeCantico}>
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>1. </Text></Text>
             {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{fDiesis}</Text></View>  }
