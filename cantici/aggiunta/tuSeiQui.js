@@ -1,15 +1,36 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { globalStyles } from '../../styles/global';
+import ColorfulText from '../../components/ColorfulText';
 
 export default function TuSeiQui ({ a, b, c, d, e, f, g, cDiesis, eBemolle, fDiesis, aBemolle, bBemolle, accordiStru }) {
     return (
     <>
     <View style={globalStyles.containerCantico}>
 
-    <View style={globalStyles.righeCantico}>
-            <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Giro: </Text>{c} {g} {d} {e}-</Text>
+        <View style={globalStyles.righeCantico}>
+                <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Giro: </Text>{c} {g} {d} {e}-</Text>
         </View>
+
+        {accordiStru == "Elettrica" &&
+            <>
+            <View style={globalStyles.righeCantico}>
+                <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Riff Parte:</Text> 1 4 | 1 3 | 2 5 | 1 3     <Text style={globalStyles.textCanticoColo}>Box: </Text>{c} 1P </Text>
+            </View>
+            <View style={globalStyles.righeCantico}>
+                <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>Esempio pattern:  1 4 |M1 M1 4| 1 4| 1 4</Text>
+            </View>
+            <View style={globalStyles.righeCantico}>
+                <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>2 variante:  1 4 6 | 1 3 5 | 2 5 7 | 1 3 5</Text>
+            </View>
+            <View style={globalStyles.righeCantico}>
+                <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}>Esempio pattern:  1 4 |M1 M1 4| 1 4| 1 6...</Text>
+            </View>
+
+            
+            <View style={globalStyles.SpazioCantico}></View>
+            </>
+        }
 
         <View style={globalStyles.SpazioCantico}></View>
 

@@ -237,6 +237,8 @@ import GesuHaPresoLaVitaMia from "../cantici/aggiunta/gesuHaPresoLaVitaMia";
 import StaPregandoPerTe from "../cantici/aggiunta/staPregandoPerTe";
 import TuVivrai from '../cantici/aggiunta/tuVivrai';
 import LaTuaBonta from '../cantici/aggiunta/laTuaBonta';
+import LATuaGioia from '../cantici/aggiunta/laTuaGioia';
+import LaTuaGioia from '../cantici/aggiunta/laTuaGioia';
 // ...importa tutti gli altri cantici
 
 const CanticiAgg = (props) => {
@@ -958,6 +960,8 @@ const CanticiAgg = (props) => {
     case "La tua bontà" :
         return <LaTuaBonta accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
     
+        case "La tua gioia" :
+        return <LaTuaGioia accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
 
     default:
         return <Text>Cantico non trovato</Text>;
