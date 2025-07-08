@@ -151,32 +151,6 @@ export default function LaTuaGioia ({ a, b, c, d, e, f, g, cDiesis, eBemolle, fD
             <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Coro (bis) || 2 Ponte ||  Finale</Text></Text>
         </View>
 
-
-
-
-{accordiStru == "Elettrica" &&
-        <>
-        <View style={globalStyles.righeCantico}>
-        
-        <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Ponte: "</Text>S</Text>
-            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{d}</Text></View> }
-            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>offia vita in noi, sì, s</Text>
-            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{f}</Text></View> }
-            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>offia vita in noi </Text>
-        </View>
-        <View style={globalStyles.righeCantico}>
-        {accordiStru == "Elettrica" &&<View><ColorfulText>  -3    3     3   2            1      2       2        dalla terza volta alzare: 6 5 3</ColorfulText></View>  }
-            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>s</Text>
-            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{a}</Text></View> }
-            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>offia vita in noi, Ges</Text>
-            {accordiStru != "Testo" &&<View><Text style={globalStyles.AccordoCantico}>{g}</Text></View> }
-            <Text style={accordiStru!="Testo"? globalStyles.textCanticoMel: globalStyles.textCanticoNo}>ù <Text style={globalStyles.textCanticoColo}>"(4 volte crescendo) </Text></Text>
-        </View>
-        </>
-        }
-
-
-
     </View>
     
     </>

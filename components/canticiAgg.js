@@ -239,6 +239,8 @@ import TuVivrai from '../cantici/aggiunta/tuVivrai';
 import LaTuaBonta from '../cantici/aggiunta/laTuaBonta';
 import LATuaGioia from '../cantici/aggiunta/laTuaGioia';
 import LaTuaGioia from '../cantici/aggiunta/laTuaGioia';
+import GesuSeiTu from '../cantici/aggiunta/gesuSeiTu';
+import Preghiera from '../cantici/aggiunta/pregniera';
 // ...importa tutti gli altri cantici
 
 const CanticiAgg = (props) => {
@@ -960,8 +962,14 @@ const CanticiAgg = (props) => {
     case "La tua bontà" :
         return <LaTuaBonta accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
     
-        case "La tua gioia" :
+    case "La tua gioia" :
         return <LaTuaGioia accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+    case "Gesù sei Tu" :
+        return <GesuSeiTu accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+    
+    case "Preghiera" :
+        return <Preghiera accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
 
     default:
         return <Text>Cantico non trovato</Text>;
