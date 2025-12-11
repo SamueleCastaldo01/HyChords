@@ -4,8 +4,11 @@ import { globalStyles } from '../styles/global';
 
 const ColorfulText = ({ children }) => {
   // Espressione regolare che cattura numeri, lettere, i caratteri "-" e ":", con o senza prefissi
-  const pattern = /(#\d+|@\d+|#[A-Za-z-:]|@[A-Za-z-:]|[A-Za-z-:]|\d+|-|:|\s+)/g;
-  const parts = children.match(pattern);
+  const pattern = /(#\d+|@\d+|#[A-Za-z\-:]|@[A-Za-z\-:]|[A-Za-z\-:()↑⬆]+|\d+|\s+)/g;
+  const text = Array.isArray(children) ? children.join("") : String(children);
+  const parts = text.match(pattern) || [];
+
+  
 
   return (
     <Text style={globalStyles.AccordoCanticoMel}>
