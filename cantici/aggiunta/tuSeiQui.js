@@ -24,8 +24,6 @@ export default function TuSeiQui ({ a, b, c, d, e, f, g, cDiesis, eBemolle, fDie
                 <Text style={accordiStru!="Testo"? globalStyles.textCantico: globalStyles.textCanticoNo}><Text style={globalStyles.textCanticoColo}>Ponte(bis) riff:</Text>  1--  1 7 1 2 </Text>
             </View>
 
-
-            
             <View style={globalStyles.SpazioCantico}></View>
             </>
         }
