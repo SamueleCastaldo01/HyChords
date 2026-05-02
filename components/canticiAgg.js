@@ -243,6 +243,14 @@ import GesuSeiTu from '../cantici/aggiunta/gesuSeiTu';
 import Preghiera from '../cantici/aggiunta/pregniera';
 import SeiVitaDentroMe from '../cantici/aggiunta/seiVitaDentroMe';
 import Romani828 from '../cantici/aggiunta/romani828';
+import EUnOnorePerMe from '../cantici/aggiunta/eunonoreperme';
+import NelSegreto from '../cantici/aggiunta/nelSegreto';
+import TornoAllaVeraAdorazione from '../cantici/aggiunta/tornoAllaVeraAdorazione';
+import NonTemero from '../cantici/aggiunta/nonTemero';
+import GloriaEdOnore from '../cantici/aggiunta/gloriaEdOnore';
+import QuandoPasserai from '../cantici/aggiunta/quandoPasserai';
+import Salmo18 from '../cantici/aggiunta/salmo18';
+import TuSeiDegno2 from '../cantici/aggiunta/tuseiDegno2';
 // ...importa tutti gli altri cantici
 
 const CanticiAgg = (props) => {
@@ -978,6 +986,30 @@ const CanticiAgg = (props) => {
 
      case "Romani 8:28" :
         return <Romani828 accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+    case "E un onore per me" :
+        return <EUnOnorePerMe accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+     case "Nel segreto" :
+        return <NelSegreto accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+    case "Torno alla vera adorazione" :
+        return <TornoAllaVeraAdorazione accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+    case "Non Temerò" :
+        return <NonTemero accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+    case "Gloria ed onore" :
+        return <GloriaEdOnore accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+     case "Quando passerai" :
+        return <QuandoPasserai accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+    case "Salmo 18" :
+        return <Salmo18 accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
+
+     case "Tu sei Degno" :
+        return <TuSeiDegno2 accordiStru={accordiStru} c={c} cDiesis={cDiesis} dBemolle={dBemolle} d={d}  dDiesis={dDiesis} eBemolle={eBemolle} e={e} f={f} fDiesis={fDiesis} gBemolle={gBemolle} g={g}  gDiesis={gDiesis} aBemolle={aBemolle} a={a}  aDiesis={aDiesis} bBemolle={bBemolle} b={b}/>
 
     default:
         return <Text>Cantico non trovato</Text>;
