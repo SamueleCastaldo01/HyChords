@@ -10,7 +10,7 @@ export default function UnVasoDAlabastro ({ a, b, c, d, e, f, g, cDiesis, eBemol
 
               {accordiStru == "Elettrica" &&
                   <>
-                     {/* Rimosso il View esterno che creava il conflitto */}
+                  
                      <View style={[globalStyles.righeCantico, { marginTop: 0 }]}>
                            <Text style={accordiStru != "Testo" ? globalStyles.textCantico : globalStyles.textCanticoNo}>
                               <Text style={globalStyles.textCanticoColo}>2 parte p.m.:</Text> 1pp 2pp 3pp 1.pp 1h2 7
